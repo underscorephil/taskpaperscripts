@@ -1,0 +1,115 @@
+<theme>
+    <!-- Window Style -->
+    <color id="foreground" red="0.51372549019608" green="0.58039215686275" blue="0.58823529411765" alpha="1.0" />
+    <color id="background" red="0" green="0.16862745098039" blue="0.21176470588235" alpha="1.0" />
+    <window foregroundColorID="foreground" backgroundColorID="background" shouldUseHUDScrollers="no" />
+
+    <!-- Text View Style -->
+    <color id="tag" red="0.52156862745098" green="0.6" blue="0" alpha="1.0" />
+    <color id="handle" extendsColorID="foreground" />
+    <color id="insertionPoint" extendsColorID="foreground" />
+    <color id="selection" red="0.7" green="0.835" blue="1" alpha="1.0" />
+    <font id="base" name="Hermit" size="16" />
+    <font id="bolder" name="Hermit Bold" size="15" />
+    <font id="lighter" name="Hermit Light" size="16" />
+    <characterStyle id="base" fontID="base" foregroundColorID="foreground" />
+    <paragraphStyle id="base" paragraphSpacingBefore="0" paragraphSpacing="0" lineSpacing="1.5" lineHeightMultiple="0.0" alignment="NSLeftTextAlignment" />
+    <textView
+        shouldAntialiasText="yes"
+        shouldShowNoteHandles="No"
+        shouldShowProjectHandles="yes"
+        defaultCharacterStyleID="base"
+        textLeftEdgeAlignmentStyle="TPEntryPlainTextAlignmentStyle"
+        insertionPointColorID="insertionPoint"
+        selectionColorID="selection"
+        handleColorID="handle"
+        tagColorID="tag"
+    />
+
+    <!-- Task style -->
+    <color id="task" extendsColorID="foreground" />
+    <font id="task" extendsFontID="base" />
+    <characterStyle id="task" fontID="task" foregroundColorID="task" />
+    <entryRule matchesQuery="type = task" lineCharacterStyleID="task" paragraphStyleID="base" />
+
+    <!-- Project style -->
+    <color id="project" red="0.14901960784314" green="0.54509803921569" blue="0.82352941176471" alpha="1.0" />
+    <font id="project" name="Helvetica Neue Light" size="16" />
+    <characterStyle id="project" fontID="project" foregroundColorID="project" />
+    <paragraphStyle id="project" extendsParagraphStyleID="base" paragraphSpacingBefore="1" paragraphSpacing="12" />
+    <entryRule matchesQuery="type = &quot;project&quot;" lineCharacterStyleID="project" paragraphStyleID="project" />
+
+    <!-- Project level 1 style -->
+    <font id="project1" name="Helvetica Neue Light" size="22" />
+    <characterStyle id="project1" fontID="project1" foregroundColorID="project1" />
+    <paragraphStyle id="project1" extendsParagraphStyleID="project" paragraphSpacingBefore="4" />
+    <entryRule matchesQuery="type = &quot;project&quot; and level = 1 -a" lineCharacterStyleID="project1" paragraphStyleID="project1" />
+
+    <!-- Project level 2 style -->
+    <font id="project2" name="Helvetica Neue Light" size="20" />
+    <characterStyle id="project2" fontID="project2" foregroundColorID="project2" />
+    <paragraphStyle id="project2" extendsParagraphStyleID="project" paragraphSpacingBefore="3" />
+    <entryRule matchesQuery="type = &quot;project&quot; and level = 2 -a" lineCharacterStyleID="project2" paragraphStyleID="project2" />
+
+   <!-- Project level 3 style -->
+    <font id="project3" name="Helvetica Neue Light" size="18" />
+    <characterStyle id="project3" fontID="project3" foregroundColorID="project3" />
+    <paragraphStyle id="project3" extendsParagraphStyleID="project" paragraphSpacingBefore="2" />
+    <entryRule matchesQuery="type = &quot;project&quot; and level = 3 -a" lineCharacterStyleID="project3" paragraphStyleID="project3" />
+
+    <!-- Note style -->
+    <color id="note" red="0.34509803921569" green="0.43137254901961" blue="0.45882352941176" alpha="1.0" />
+    <font id="note" extendsFontID="lighter" />
+    <characterStyle id="note" fontID="note" foregroundColorID="note" />
+ <paragraphStyle id="note" extendsParagraphStyleID="base" paragraphSpacingBefore="0" paragraphSpacing="5" />
+    <entryRule matchesQuery="type = note" lineCharacterStyleID="note" paragraphStyleID="note" />
+
+    <!-- GroupHeader style (top level projects) -->
+    <color id="clear" red="1.0" green="1.0" blue="1.0" alpha="0.0" />
+    <gradient id="groupHeader" startColorID="foreground" endColorID="clear" angle="0" />
+    <color id="groupHeader" red="0.16470588235294" green="0.63137254901961" blue="0.59607843137255" alpha="1.0" />
+    <font id="groupHeader" name="Helvetica Neue Light" size="26" />
+    <characterStyle id="groupHeader" fontID="groupHeader" foregroundColorID="groupHeader" />
+    <paragraphStyle id="groupHeader" extendsParagraphStyleID="base" paragraphSpacingBefore="20" paragraphSpacing="12" />
+    <backgroundStyle
+        id="groupHeader"
+        maxWidth="0"
+        xWeight="0"
+        maxHeight="1"
+        yWeight="-0.5"
+        cornerRadiusX="0"
+        cornerRadiusY="0"
+        fillGradientID="groupHeader"
+    />
+    <entryRule matchesQuery="isgroupheader" paragraphStyleID="groupHeader" lineCharacterStyleID="groupHeader" frontParagraphBackgroundStyleID="groupHeader" />
+
+    <!-- @done style -->
+    <color id="done" red="0.25" green="0.25" blue="0.25" alpha="1.0" />
+    <characterStyle id="done" strikethroughStyle="NSUnderlineStyleSingle" foregroundColorID="done" />
+    <entryRule matchesQuery="@done" contentCharacterStyleID="done" />
+
+    <!-- @today style -->
+    <color id="today" red="0.79607843137255" green="0.29411764705882" blue="0.08627450980392" alpha="1.0" />
+    <characterStyle id="today" fontID="bolder" foregroundColorID="today" />
+    <entryRule matchesQuery="@today" contentCharacterStyleID="today" />
+
+    <!-- @wip style -->
+    <color id="wip" red="0.52156862745098" green="0.6" blue="0" alpha="1.0" />
+    <characterStyle id="wip" foregroundColorID="wip" />
+    <entryRule matchesQuery="@wip" contentCharacterStyleID="wip" />
+
+    <!-- @asap style -->
+    <color id="asap" red="0.86274509803922" green="0.00313725490196" blue="0.19607843137255" alpha="1.0" />
+    <characterStyle id="asap" foregroundColorID="asap" />
+    <entryRule matchesQuery="@asap" contentCharacterStyleID="asap" />
+
+    <!-- @slipped style -->
+    <color id="slipped" red="0.67" green="0.137" blue="0.136" alpha="1.0" />
+    <characterStyle id="slipped" fontID="bolder" foregroundColorID="slipped" />
+    <entryRule matchesQuery="@slipped" contentCharacterStyleID="slipped" />
+
+    <!-- @reco style -->
+    <color id="reco" red="0" green="0.5" blue="0.75" alpha="1.0" />
+    <characterStyle id="reco" fontID="bolder" foregroundColorID="reco" />
+    <entryRule matchesQuery="@reco" contentCharacterStyleID="reco" />
+</theme>

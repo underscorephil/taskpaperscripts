@@ -19,3 +19,20 @@ Switching from the Day One CLI to jrnl allowed for more flexible use of Day One'
 * Throw day_one_log.scpt into `~/Library/Scripts/Applications/TaskPaper`
 * Look through the script for any reference to `CONFIG` and make a decision to keep the defaults or change these values.
 * Make the script easily executable. I personally am using an [Alfred](http://www.alfredapp.com/) workflow.
+
+## hermitcan_solar_dark.taskpapertheme
+
+[Solarized Dark](http://ethanschoonover.com/solarized) TaskPaper theme based on [tundramonkey's](https://gist.github.com/tundramonkey) theme [HelvetiCan](https://gist.github.com/tundramonkey/5056539) using the [Hermit fontset](https://pcaro.es/p/hermit/)
+
+### Requirements
+
+* [TaskPaper](http://www.hogbaysoftware.com/products/taskpaper) 
+* [Hermit, Hermit Light, Hermit Bold](https://pcaro.es/p/hermit/#downloads)
+
+### Installation
+
+* Place gently into `~/Library/Application Support/TaskPaper/Themes`
+* Choose hermitcan_solar_dark from the preference menu
+    *It may be necessary to restart TaskPaper for the theme to appear*
+
+
