@@ -25,6 +25,7 @@ Switching from the Day One CLI to jrnl allowed for more flexible use of Day One'
 
 [Solarized Dark](http://ethanschoonover.com/solarized) TaskPaper theme based on [tundramonkey's](https://gist.github.com/tundramonkey) theme [HelvetiCan](https://gist.github.com/tundramonkey/5056539) using the [Hermit fontset](https://pcaro.es/p/hermit/)
 
+![Screenshot](http://underscorephil.github.io/taskpaperscripts/hermitcan_solar_dark.png)
 ### Requirements
 
 * [TaskPaper](http://www.hogbaysoftware.com/products/taskpaper) 
