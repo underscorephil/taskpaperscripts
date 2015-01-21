@@ -11,9 +11,10 @@ Switching from the Day One CLI to jrnl allowed for more flexible use of Day One'
 ### Requirements
 
 * [Day One](http://dayoneapp.com/)
-* [jrnl](http://maebert.github.io/jrnl/) configured to [create entries in Day One](http://maebert.github.io/jrnl/advanced.html#dayone-integration)
 * [TaskPaper](http://www.hogbaysoftware.com/products/taskpaper) 
+* [jrnl](http://maebert.github.io/jrnl/) configured to [create entries in Day One](http://maebert.github.io/jrnl/advanced.html#dayone-integration)
 
+*jrnl is used in place of the Day One CLI because of its native support for tags in the @ format already used by TaskPaper*
 ### Installation
 
 * Throw day_one_log.scpt into `~/Library/Scripts/Applications/TaskPaper`
