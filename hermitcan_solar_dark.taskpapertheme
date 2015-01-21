@@ -93,23 +93,14 @@
     <characterStyle id="today" fontID="bolder" foregroundColorID="today" />
     <entryRule matchesQuery="@today" contentCharacterStyleID="today" />
 
-    <!-- @wip style -->
-    <color id="wip" red="0.52156862745098" green="0.6" blue="0" alpha="1.0" />
-    <characterStyle id="wip" foregroundColorID="wip" />
-    <entryRule matchesQuery="@wip" contentCharacterStyleID="wip" />
-
     <!-- @asap style -->
     <color id="asap" red="0.86274509803922" green="0.00313725490196" blue="0.19607843137255" alpha="1.0" />
     <characterStyle id="asap" foregroundColorID="asap" />
     <entryRule matchesQuery="@asap" contentCharacterStyleID="asap" />
 
-    <!-- @slipped style -->
-    <color id="slipped" red="0.67" green="0.137" blue="0.136" alpha="1.0" />
-    <characterStyle id="slipped" fontID="bolder" foregroundColorID="slipped" />
-    <entryRule matchesQuery="@slipped" contentCharacterStyleID="slipped" />
+    <!-- @delegated style -->
+    <color id="delegated" red="0.42352941176471" green="0.44313725490196" blue="0.59607843137255" alpha="0.76862745098039" />
+    <characterStyle id="delegated" fontID="bolder" foregroundColorID="delegated" />
+    <entryRule matchesQuery="@delegated" contentCharacterStyleID="delegated" />
 
-    <!-- @reco style -->
-    <color id="reco" red="0" green="0.5" blue="0.75" alpha="1.0" />
-    <characterStyle id="reco" fontID="bolder" foregroundColorID="reco" />
-    <entryRule matchesQuery="@reco" contentCharacterStyleID="reco" />
 </theme>
