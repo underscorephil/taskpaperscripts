@@ -20,15 +20,15 @@ Switching from the Day One CLI to jrnl allowed for more flexible use of Day One'
 
 * Throw day_one_log.scpt into `~/Library/Scripts/Applications/TaskPaper`
 * Look through the script for any reference to `CONFIG` and make a decision to keep the defaults or change these values.
-* Make the script easily executable. I personally am using an [Alfred](http://www.alfredapp.com/) v2 [workflow](#taskpaper_dayone_log.alfredworkflow).
+* Make the script easily executable. I personally am using an [Alfred](http://www.alfredapp.com/) v2 [workflow](#taskpaper_dayone_logalfredworkflow).
 
 ## taskpaper_dayone_log.alfredworkflow
 
-[Alfred](http://www.alfredapp.com/) workflow for use with [day_one_log.scpt](#day_one_log.scpt)
+[Alfred](http://www.alfredapp.com/) workflow for use with [day_one_log.scpt](#day_one_logscpt)
 
 ### Requirements
 
-* [day_one_log.scpt](#day_one_log.scpt)
+* [day_one_log.scpt](#day_one_logscpt)
 * [Alfred v2](http://www.alfredapp.com/)
 
 ### Installation
